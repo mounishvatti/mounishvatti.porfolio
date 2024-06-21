@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="icon" href="./assets/icondsa.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -91,7 +92,7 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>Int. MTech<br />Computer Science</p>
+              <p>MTech<br />Computer Science</p>
             </div>
           </div>
           <div class="text-container">
@@ -366,7 +367,7 @@
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">
-        <span style="color: rgba(199, 73, 27, 0.749)">Contact</span> Me
+        <span style="color: rgb(199, 73, 27)">Contact</span> Me
       </h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -380,7 +381,15 @@
           </a>
         </div>
       </div>
+      <div style="display: flex; gap: 30px; justify-content: center; padding-top: 30px;">
+        <button onclick="redirectTo('github')" class="github-button"><i class="fa fa-github" style="font-size:30px"></i></button>
+        <button onclick="redirectTo('linkedin')" class="linkedin-button"><i class="fa fa-linkedin" style="font-size:30px"></i></button>
+        <button onclick="redirectTo('twitter')" class="twitter-button"><i class="fa fa-twitter" style="font-size:30px"></i></button>
+        <button onclick="redirectTo('instagram')" class="instagram-button"><i class="fa fa-instagram" style="font-size:30px"></i></button>
+      </div>
+      
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -395,5 +404,27 @@
       <p>Made with ❤️ by mounish</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+      function redirectTo(platform) {
+          let url;
+          switch (platform) {
+              case 'github':
+                  url = 'https://github.com/mounishvatti'; // Replace with your GitHub profile URL
+                  break;
+              case 'linkedin':
+                  url = 'https://linkedin.com/in/mounishvatti'; // Replace with your LinkedIn profile URL
+                  break;
+              case 'twitter':
+                  url = 'https://twitter.com/mounish_vatti'; // Replace with your Twitter profile URL
+                  break;
+              case 'instagram':
+                  url = 'https://instagram.com/mounishvatti'; // Replace with your Instagram profile URL
+                  break;
+              default:
+                  return;
+          }
+          window.open(url, '_blank');
+      }
+      </script>
   </body>
 </html>
