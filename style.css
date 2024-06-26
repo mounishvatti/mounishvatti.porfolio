@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(30, 30, 30);
   color: rgb(185, 185, 185);
 }
 
@@ -305,7 +305,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: rgba(40, 40, 40);
+  background: rgb(35, 35, 35);
   border-radius: 2rem;
   border: rgb(65, 65, 65) 0.1rem solid;
   border-color: rgb(65, 65, 65);
@@ -506,4 +506,9 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.disabled-button {
+  pointer-events: none;
+  opacity: 0.5;
 }
